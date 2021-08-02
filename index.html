@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>News</title>
+	<script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+	</script>
+	<script src=
+    "https://cdnjs.cloudflare.com/ajax/libs/jquery-easy-ticker/2.0.0/jquery.easy-ticker.min.js">
+        </script>
+
+	<style>
+        body{
+            width: 100%;
+	        height: 100vh;
+	        background : url('./images/adver1.jpeg');
+	        height: auto;
+        }
+		.dashboard {
+			background-color: white;
+			width: 1000px;
+			height: 350px;
+			
+			overflow: hidden;
+			border-radius: 15px;
+			margin: 0px auto;
+		}
+
+		ul {
+			margin: 1px;
+			padding: 1px;
+		}
+
+		li {
+			text-align: justify;
+			border-bottom: 2px solid blue;
+		}
+
+		h1 {
+			color: red;
+		}
+      /*  .button{
+          display:inline-block;
+          background:none;
+          width: 50px;
+          height: 20px;
+         }
+          .button.okl('images/adver2.jpeg');ay{
+          background:ur
+           }*/
+           .img{
+               overflow: auto;
+               width: 100%;
+               height: auto;
+
+           }
+           .alert{
+               background-color: white;
+               border: none;
+
+           }
+	</style>
+</head>
+
+
+<body style="text-align:center;">
+
+	<h1>News</h1>
+	<div class="dashboard">
+		<ul id="news">
+			<li>
+                <img src="images/event.jpeg" alt="events" width="1000" height="300">
+				<h1>The Art Of Advertising</h1>
+				<p>   Advertising, the techniques and practices used to bring products, services, opinions, or causes to public notice for the purpose of persuading the public to respond in a certain way toward what is advertised.
+                 Most advertising involves promoting a good that is for sale, but similar methods are used to encourage people to drive safely, to support various charities, or to vote for political candidates, among many other examples.
+                  In many countries advertising is the most important source of income for the media (e.g., newspapers, magazines, or television stations) through which it is conducted. In the noncommunist world advertising has become a large and important service industry.
+					 
+				</p>
+                <div class="alert alert-success alert-dismissible">
+                   
+                    <img class="img" src="images/event1.jpeg">
+                
+                </div>
+                <p>
+                       Another objective of advertising is to reinforce the brand message and to reassure the existing and potential customers about the brand vision. Advertising helps the brand to maintain top of mind awareness and to avoid competitors stealing the customers. This also helps in the word of mouth marketing.
+                </p>
+                <p>
+                      Advertising is always present, though people may not be aware of it. In today's world, advertising uses every possible media to get its message through. It does this via television, print (newspapers, magazines, journals etc), radio, press, internet, direct selling, hoardings, mailers, contests, sponsorships, posters, clothes, events, colours, sounds, visuals and even people (endorsements).
+                </p>
+                <p>
+                    The advertising industry is made of companies that advertise, agencies that create the advertisements, media that carries the ads, and a host of people like copy editors, visualizers, brand managers, researchers, creative heads and designers who take it the last mile to the customer or receiver. A company that needs to advertise itself and/or its products hires an advertising agency.
+                </p>
+                <p>
+                    The company briefs the agency on the brand, its imagery, the ideals and values behind it, the target segments and so on. The agencies convert the ideas and concepts to create the visuals, text, layouts and themes to communicate with the user. After approval from the client, the ads go on air, as per the bookings done by the agency's media buying unit.
+                </p>
+			</li>
+            
+
+
+			
+
+			
+		</ul>
+	</div>
+
+	<script type="text/javascript">
+
+		$(document).ready(function () {
+			$('.dashboard').easyTicker({
+				direction: 'up',
+				easing: 'swing',
+				speed: 'slow',
+				interval: 2000,
+				height: 'auto',
+				mousePause: true,
+				controls: {
+					playText: 'Play',
+					stopText: 'Stop'
+				},
+				callbacks: {
+					before: false,
+					after: false
+				}
+			});
+		});
+    /*    var buttons = document.getElementsByClassName("button");
+        for (var b = 0; b < buttons.length; b++) {
+         buttons[b].classList.add("okay");
+  }*/
+	</script>
+</body>
+
+</html>
